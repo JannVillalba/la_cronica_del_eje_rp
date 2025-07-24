@@ -2,30 +2,30 @@
   "noticias": [
     {
       "id": 1,
-      "titulo": "Nueva actualización del servidor El Eje RP",
-      "resumen": "Se han implementado nuevas características y mejoras en el servidor de roleplay más popular. Descubre todas las novedades que hemos preparado para ti.",
-      "contenido": "El servidor El Eje RP ha recibido una importante actualización que incluye nuevos mapas, personajes y mecánicas de juego. Esta actualización representa meses de trabajo del equipo de desarrollo y promete ofrecer una experiencia de roleplay más inmersiva y emocionante.\n\nEntre las principales novedades se encuentran:\n\n• Nuevos mapas urbanos con mayor detalle y realismo\n• Sistema de economía mejorado con nuevos trabajos\n• Personajes NPC con inteligencia artificial avanzada\n• Mejoras en el sistema de construcción de casas\n• Nuevos vehículos y personalización expandida\n\nTodos los jugadores actuales mantendrán su progreso y podrán disfrutar inmediatamente de estas nuevas características. La actualización estará disponible a partir del próximo lunes.",
-      "imagen": "./img/noticia 1.jpg",
-      "fecha": "2025-01-20",
-      "autor": "Equipo El Eje RP"
+      "titulo": "Gran Desfile del 20 de Julio con Todas las Fuerzas Públicas",
+      "resumen": "Las fuerzas del orden y emergencias desfilaron en una impresionante exhibición para conmemorar la independencia. Revive los mejores momentos.",
+      "contenido": "El pasado **20 de Julio**, la ciudad fue testigo de un majestuoso desfile en el que participaron todas las fuerzas públicas del servidor: **Ejército, Policía, EMS y más**. El evento, organizado por el Gobierno RP, buscaba honrar la independencia y mostrar el trabajo coordinado de las instituciones.\n\n**Highlights del evento:**\n\n• Exhibición de vehículos blindados y equipamiento táctico.\n• Demostración de protocolos de emergencia por parte del EMS.\n• Discurso del Alcalde RP, resaltando la unidad nacional.\n\nEl desfile culminó con una ceremonia de reconocimiento a los miembros más destacados de cada facción. ¡Pronto subiremos el video completo a nuestro Discord!",
+      "imagen": "./img/El-eje-20dejulio.png",
+      "fecha": "2025-07-20",
+      "autor": "Gobierno RP"
     },
     {
       "id": 2,
-      "titulo": "Torneo de roleplay: Inscripciones abiertas para miembros de la comunidad",
-      "resumen": "Participa en el primer torneo oficial de El Eje RP. Premios increíbles y reconocimiento para los mejores jugadores de roleplay de la comunidad.",
-      "contenido": "¡Llega el evento más esperado del año! El primer Torneo Oficial de Roleplay de El Eje RP está aquí, y las inscripciones ya están abiertas para todos los miembros de la comunidad.\n\nEste torneo único evaluará las habilidades de interpretación, creatividad narrativa y capacidad de improvisación de los participantes. Los jueces serán moderadores experimentados y miembros veteranos de la comunidad.\n\nPremios del torneo:\n• 1er lugar: Rango VIP de por vida + $50,000 en el juego\n• 2do lugar: Rango Premium por 6 meses + $25,000 en el juego\n• 3er lugar: Rango Premium por 3 meses + $10,000 en el juego\n• Todos los participantes: Medalla conmemorativa única\n\nLas inscripciones estarán abiertas hasta el 15 de febrero. ¡No pierdas esta oportunidad de demostrar tus habilidades y ganar premios increíbles!",
-      "imagen": "./img/noticia 2.jpg",
-      "fecha": "2025-01-18",
-      "autor": "Administración"
+      "titulo": "Carrera de Autos del Fin de Semana: ¡Pura Adrenalina!",
+      "resumen": "Los mejores pilotos del servidor compitieron en un circuito lleno de curvas peligrosas y emociones fuertes. ¿Quién se llevó el trofeo?",
+      "contenido": "El pasado fin de semana, el **Circuito Urbano RP** albergó una de las carreras más reñidas del año. Con participantes de todas las facciones, el evento dejó claro que el motorsport RP está en su mejor momento.\n\n**Resultados clave:**\n\n• **Ganador:** _SpeedDemon_ (Equipo Nitro).\n• **Segundo lugar:** _LaFuria_ (Escudería Phoenix).\n• **Mejor vuelta rápida:** _RayoMcQueen_.\n\nLa organización ya anunció que la próxima edición incluirá **categorías de vehículos tuneados y premios en efectivo**. ¿Estás listo para el próximo desafío?",
+      "imagen": "./img/EL-eje-carrera.png",
+      "fecha": "2025-07-18",
+      "autor": "Comité de Eventos RP"
     },
     {
-      "id": 3,
-      "titulo": "Nuevas reglas de convivencia en el servidor",
-      "resumen": "Para mantener un ambiente sano y divertido para todos, se han actualizado las reglas de convivencia. Conoce los cambios más importantes.",
-      "contenido": "Con el objetivo de mantener El Eje RP como un espacio seguro y divertido para todos los jugadores, hemos actualizado nuestras reglas de convivencia. Estos cambios entrarán en vigor el próximo 1 de febrero.\n\nPrincipales actualizaciones:\n\n• Tolerancia cero al acoso de cualquier tipo\n• Sistema de reportes mejorado y más eficiente\n• Nuevas sanciones graduales para infracciones menores\n• Protección especial para jugadores nuevos\n• Clarificación de las reglas de roleplay realista\n\nEstas medidas han sido desarrolladas en colaboración con la comunidad, basándose en sus sugerencias y experiencias. Nuestro objetivo es crear un entorno donde todos puedan disfrutar del roleplay sin preocupaciones.\n\nTodos los jugadores deberán aceptar las nuevas reglas antes de su próxima conexión. Recomendamos leerlas cuidadosamente para evitar malentendidos.",
-      "imagen": "./img/noticias 3.jpeg",
-      "fecha": "2025-01-15",
-      "autor": "Equipo de Moderación"
+      "id": 4,
+      "titulo": "El Ejército RP: La Facción que No Descansa",
+      "resumen": "Con operativos diarios y entrenamientos de élite, el Ejército demuestra por qué es la facción más comprometida del servidor.",
+      "contenido": "En las últimas semanas, el **Ejército RP** ha elevado el estándar del roleplay con operaciones realistas y una presencia constante en la seguridad nacional. Desde patrullas hasta misiones de alto riesgo, sus miembros no conocen límites.\n\n**Logros recientes:**\n\n• **Operativo 'Guardián Nocturno'**: Neutralización de una red ilegal en la zona montañosa.\n• **Jornadas de reclutamiento**: Formación intensiva para nuevos cadetes.\n• **Colaboración con EMS y Policía** en simulacros de crisis.\n\nEl **General RP** declaró: _'Nuestra misión es proteger a los ciudadanos. Buscamos jugadores serios que quieran vivir la experiencia militar al máximo'_. ¿Cumples con los requisitos? ¡Postúlate hoy!",
+      "imagen": "./img/El-eje-ejercito.png",
+      "fecha": "2025-07-22",
+      "autor": "Comandancia del Ejército RP"
     }
   ]
 }
