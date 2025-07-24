@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Eje Roleplay</title>
+  <link rel="stylesheet" href="css/style_noticias.css">
+  <link rel="icon" href="./img/Logo-el-eje.png" type="image/png">
+</head>
+<body>
+<header class="header">
+  <div class="logo">
+    <img src="./img/Logo-el-eje.png" alt="Logo de El Eje Roleplay">
+    El Eje Roleplay
+  </div>
+  <nav>
+    <a href="index.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 12h3v8h7v-6h2v6h7v-8h3L12 2zm0 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+      Inicio
+    </a>
+    <a href="index.html#noticias">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+      Noticias
+    </a>
+    <a href="https://discord.gg/UQaKq7jY">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+      El Eje RP servidor
+    </a>
+  </nav>
+</header>
+
+<main class="main-content">
+  <div id="loading" class="loading">Cargando noticia...</div>
+  <div id="error" class="error" style="display: none;">
+    Error al cargar la noticia. <a href="index.html" style="color: white;">Volver al inicio</a>
+  </div>
+  <div id="article-container" style="display: none;">
+    <!-- El contenido se cargará dinámicamente aquí -->
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="left-content">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+    El Eje RP servidor
+  </div>
+  <div>By tasa48 @copyright 2025</div>
+  <div class="right-content">
+    <img src="./img/Logo-el-eje.png" alt="Logo de El Eje Roleplay">
+  </div>
+</footer>
+
+<script>
+  async function cargarNoticia() {
+    try {
+      // Obtener el ID de la noticia de la URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const noticiaId = parseInt(urlParams.get('id'));
+
+      if (!noticiaId) {
+        throw new Error('ID de noticia no válido');
+      }
+
+      // Cargar las noticias desde el JSON
+      const response = await fetch('basedatos.json');
+      const data = await response.json();
+
+      // Buscar la noticia específica
+      const noticia = data.noticias.find(n => n.id === noticiaId);
+
+      if (!noticia) {
+        throw new Error('Noticia no encontrada');
+      }
+
+      // Actualizar el título de la página
+      document.title = `${noticia.titulo} - El Eje Roleplay`;
+
+      // Mostrar la noticia
+      const container = document.getElementById('article-container');
+      container.innerHTML = `
+      <div class="image-placeholder">
+        <img src="${noticia.imagen}" alt="${noticia.titulo}" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="text-content">
+        <div class="heading">${noticia.titulo}</div>
+        <div class="subheading">${noticia.resumen}</div>
+        <div class="article-meta">
+          <span>${new Date(noticia.fecha).toLocaleDateString('es-ES', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      })}</span>
+          <span>Por ${noticia.autor}</span>
+        </div>
+        ${noticia.contenido.split('\n').map(paragraph =>
+        paragraph.trim() ? `<p>${paragraph}</p>` : ''
+      ).join('')}
+        <a href="index.html" class="back-button">Volver</a>
+      </div>
+    `;
+
+      // Ocultar loading y mostrar contenido
+      document.getElementById('loading').style.display = 'none';
+      container.style.display = 'block';
+
+    } catch (error) {
+      console.error('Error cargando noticia:', error);
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('error').style.display = 'block';
+    }
+  }
+
+  // Cargar la noticia cuando la página esté lista
+  document.addEventListener('DOMContentLoaded', cargarNoticia);
+</script>
+</body>

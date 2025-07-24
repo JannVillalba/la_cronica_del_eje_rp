@@ -1,0 +1,100 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Crónica del Eje - Lo último en información</title>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./img/Logo-el-eje.png" type="image/png">
+</head>
+<body>
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="logo-container">
+      <img src="./img/Logo-el-eje.png" alt="Logo La Crónica del Eje" class="logo">
+      <h1 class="logo-text">La Crónica del Eje</h1>
+    </div>
+    <div class="nav-items">
+      <div class="servidor-info">
+        <a href="https://discord.gg/UQaKq7jY" class="servidor-link">
+        <img src="./img/discord.png" alt="Icono servidor" class="servidor-icon">
+        <span class="servidor-text">El eje Rp servidor</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="header-content">
+    <h1>La crónica del eje</h1>
+    <p>Lo último en información</p>
+    <a href="#noticias" class="ver-noticias-btn">Ver noticias</a>
+  </div>
+</header>
+
+<div class="banner">
+  <img src="./img/El-eje-banner-2.png" alt="Banner de El Eje Roleplay" class="banner-img">
+</div>
+
+<main id="noticias">
+  <h2>Noticias</h2>
+  <div id="noticias-container" class="noticias-container">
+    <div class="loading">Cargando noticias...</div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <a href="https://discord.gg/otro-enlace" class="servidor-link">
+      <img src="./img/discord.png" alt="Icono servidor" class="servidor-icon">
+      <h4 class="servidor-text">El eje RP Discord server</h4>
+    </a>
+
+    <p>By tasa48 ©Copyright 2025</p>
+  </div>
+</footer>
+
+<script>
+  async function cargarNoticias() {
+    try {
+      const response = await fetch('basedatos.json');
+      const data = await response.json();
+
+      const container = document.getElementById('noticias-container');
+      container.innerHTML = '';
+
+      data.noticias.forEach(noticia => {
+        const noticiaElement = document.createElement('article');
+        noticiaElement.className = 'noticia';
+
+        noticiaElement.innerHTML = `
+        <img src="${noticia.imagen}" alt="${noticia.titulo}" class="noticia-img">
+        <div class="noticia-content">
+          <div class="noticia-meta">
+            <span>${new Date(noticia.fecha).toLocaleDateString('es-ES')}</span>
+            <span>Por ${noticia.autor}</span>
+          </div>
+          <h3>${noticia.titulo}</h3>
+          <p>${noticia.resumen}</p>
+          <a href="noticia.html?id=${noticia.id}" class="noticia-btn">Leer</a>
+        </div>
+      `;
+
+        container.appendChild(noticiaElement);
+      });
+    } catch (error) {
+      console.error('Error cargando noticias:', error);
+      document.getElementById('noticias-container').innerHTML =
+        '<div style="color: white; text-align: center;">Error cargando las noticias. Por favor, intenta más tarde.</div>';
+    }
+  }
+
+  // Cargar noticias cuando la página esté lista
+  document.addEventListener('DOMContentLoaded', cargarNoticias);
+</script>
+</body>
+</html>
