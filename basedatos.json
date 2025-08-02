@@ -2,6 +2,15 @@
   "noticias": [
     {
       "id": 1,
+      "titulo": "La Sociedad del Quindío declara la guerra al Estado",
+      "resumen": "El grupo LSDQ anuncia su lucha contra el gobierno y fuerzas públicas, acusándolos de corrupción y abandono. Ofrecen recompensas por bajas de agentes.",
+      "contenido": "Buenas noches ciudadanos del Eje Cafetero\n\nNos dirigimos a ustedes con el propósito de aclararles nuestros actos últimamente \n\nLa Sociedad del Quindío no busca herir a la ciudadanía nuestra guerra es contra el estado corrupto y el gobierno de adorno que rige actualmente.\n\nNo duele que la mala administración por parte del gobierno este llevando a qué el eje cafetero se vuelva una ciudad en dónde sobrevivir sea imposible, los policías corruptos, los COPEs abusando de su poder y el gobernador de la ciudad ausente.\n\nPor esto es que la sociedad del quindio ha tomado la decisión de \n\nDeclararle la guerra al ESTADO \n\nNuestra guerra ya empezó y no se detendrá hasta que el gobernador se ponga serio y empiece a cumplir con todo aquello que prometió en campaña la ayuda a la gente pobre \n\nA la fuerza publica les advertimos que vamos por ustedes Cuidense ya que vamos sin piedad por cada uno de ustedes por estar del lado de la gente que menos precia a la comunidad\n\nCiudadanos del Eje cafetero no tengan miedo de la fuerza publica la gente de la sociedad del Quindío estará para defenderlos \n\nRecompensas : \n\nCada 4 ponal y ejército muerto : 5 Millones de pesos \n\nCada 2 COPEs muerto : 8 millones \n\nQue esperan para ganarse una plática fácil.\n\nCabe aclarar que todo funcionario público que decida aliarse con nosotros será bienvenido con la manos abiertas y le garantizamos una protección \n\nATT : 💀 La Sociedad Del Quindío [LSDQ]",
+      "imagen": "./img/el-eje-conflicto.png",
+      "fecha": "2025-07-15",
+      "autor": "La Sociedad del Quindío [LSDQ]"
+    },
+    {
+      "id": 2,
       "titulo": "Gran Desfile del 20 de Julio con Todas las Fuerzas Públicas",
       "resumen": "Las fuerzas del orden y emergencias desfilaron en una impresionante exhibición para conmemorar la independencia. Revive los mejores momentos.",
       "contenido": "El pasado **20 de Julio**, la ciudad fue testigo de un majestuoso desfile en el que participaron todas las fuerzas públicas del servidor: **Ejército, Policía, EMS y más**. El evento, organizado por el Gobierno RP, buscaba honrar la independencia y mostrar el trabajo coordinado de las instituciones.\n\n**Highlights del evento:**\n\n• Exhibición de vehículos blindados y equipamiento táctico.\n• Demostración de protocolos de emergencia por parte del EMS.\n• Discurso del Alcalde RP, resaltando la unidad nacional.\n\nEl desfile culminó con una ceremonia de reconocimiento a los miembros más destacados de cada facción. ¡Pronto subiremos el video completo a nuestro Discord!",
@@ -10,7 +19,7 @@
       "autor": "Gobierno RP"
     },
     {
-      "id": 2,
+      "id": 3,
       "titulo": "Carrera de Autos del Fin de Semana: ¡Pura Adrenalina!",
       "resumen": "Los mejores pilotos del servidor compitieron en un circuito lleno de curvas peligrosas y emociones fuertes. ¿Quién se llevó el trofeo?",
       "contenido": "El pasado fin de semana, el **Circuito Urbano RP** albergó una de las carreras más reñidas del año. Con participantes de todas las facciones, el evento dejó claro que el motorsport RP está en su mejor momento.\n\n**Resultados clave:**\n\n• **Ganador:** _SpeedDemon_ (Equipo Nitro).\n• **Segundo lugar:** _LaFuria_ (Escudería Phoenix).\n• **Mejor vuelta rápida:** _RayoMcQueen_.\n\nLa organización ya anunció que la próxima edición incluirá **categorías de vehículos tuneados y premios en efectivo**. ¿Estás listo para el próximo desafío?",
